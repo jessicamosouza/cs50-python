@@ -1,7 +1,4 @@
-def main():
-    fruit = input('Item: ')
-
-    fruits_cal_dict = {
+fruits_cal_dict = {
         "Apple": 130,
         "Avocado": 50,
         "Banana": 110,
@@ -22,7 +19,11 @@ def main():
         "Tangerine": 50,
         "Watermelon": 80
     }
-    check_calorie(fruits_cal_dict, fruit.title())
+
+
+def main():
+    fruit = input('Item: ').title()
+    check_calorie(fruits_cal_dict, fruit)
 
 
 def check_calorie(fruits_cal_dict, fruit):
